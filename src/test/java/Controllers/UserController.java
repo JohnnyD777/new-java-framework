@@ -5,16 +5,15 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import Models.User;
 
-import java.net.URI;
 
 import static Constants.CommonConstants.BASE_URI;
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 
 
+
 public class UserController {
     RequestSpecification requestSpecification;
-
     private static final String USER_ENDPOINT = "user";
 
     public UserController(){
